@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+ 
+  <ul class="nav nav-pills bg-light ">
+   <div class="navbar w-100" >
+          <div class="Instagram d-flex p-4  gap-2">
+              <i class="fa-brands fa-instagram fs-2 "></i>
+            <h4 >Instagram</h4>
+          </div>
+    
+    <div class="right d-flex p-4 gap-5 ">
+      <!-- Button trigger modal -->
+ <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+   Create a new post
+ </button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+            <textarea class="form-control "  id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post"></textarea>
+        </div>
+          <i class="fa-solid fa-camera bg-light fs-4 p-3"></i>
+          <i class="fa-solid fa-location-dot bg-light fs-4 p-3"></i>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <li class="nav-item dropdown ">
+        <a class="nav-link dropdown-toggle bg-secondary text-white " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-gear"></i></a>
+       <ul class="dropdown-menu dropdown-menu-end ">
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+       </ul>
+      </li>
+    </div>
+   </div>
+ </ul>
+ <nav class="dos ">
+  <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+    <button class="nav-link active border-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap " viewBox="0 0 16 16">
+        <path d="M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/>
+      </svg>
+    </button>
+    <button class="nav-link border-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
+        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"/>
+     </svg>
+    </button>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+    <div id="ImagesContainer" class="containerTextCenter  justify-content-center " >
+      <div class="row" style="padding: 20px 220px;">
+        <div class="col " style="display: flex; justify-content: center;">
+          <img src="https://www.mercurynews.com/wp-content/uploads/2018/08/GettyImages-801073258.jpg?w=1024" style="width: 250px; height: 250px; " >
+        </div>
+        <div class="col" style="display: flex; justify-content: center;">
+          <img src="https://media.cntraveler.com/photos/5f0c6514a59b5ef54da61346/master/w_320%2Cc_limit/Tenerife-GettyImages-1138175909.jpg" style="width: 250px; height: 250px; "  >
+        </div>
+        <div class="col" style="display: flex; justify-content: center;">
+          <img src="https://www.mykhel.com/img/2012/11/16-zlatan-ibra.jpg" style="width: 250px; height: 250px; " >
+        </div>
+      </div>
+      <div class="row" style="padding: 20px 220px;">
+        <div class="col" style="display: flex; justify-content: center;">
+         <img src="https://cdn.britannica.com/36/162636-131-E4AA93A0/Colosseum-Rome-Italy.jpg"  style="width: 250px; height: 250px; ">
+        </div>
+        <div class="col" style="display: flex; justify-content: center;">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaLPh6idrZYN7N95jYTAHZobTarqxl3dlVsNFnZR7xunyvxknvmG2lBXcQ6RFLhvlFTRc&usqp=CAU" style="width: 250px; height: 250px; ">
+        </div>
+        <div class="col" style="display: flex; justify-content: center;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1YCdCBDgWefxSqRQECwBRVK44hBzbz8Hevpr_cGxk4-R0mK4UkwcrD7rW6IOOrE5Q36U&usqp=CAU" style="width: 250px; height: 250px; ">
+        </div>
+      </div>
+      <div class="row" style="padding: 20px 220px;">
+        <div class="col" style="display: flex; justify-content: center;">
+          <img src="https://www.travelandleisure.com/thmb/wdUcyBQyQ0wUVs4wLahp0iWgZhc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/taj-mahal-agra-india-TAJ0217-9eab8f20d11d4391901867ed1ce222b8.jpg" style="width: 250px; height: 250px; ">
+        </div>
+        <div class="col" style="display: flex; justify-content: center;">
+          <img src="https://ca-times.brightspotcdn.com/dims4/default/b850e49/2147483647/strip/true/crop/500x333+0+8/resize/1440x960!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F6f%2Fab%2F7fa1ddd991f0d12458276fb35ceb%2Fla-sevenwonders1-jku3c3nc" style="width: 250px; height: 250px; ">
+        </div>
+        <div class="col" style="display: flex; justify-content: center;">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN8A9nK_1ifSK4lBk3QQuBqZkB4iBPHQ6KPJOWhfZFi_7BwoMyfNrlK_k-utyoSxYtUWg&usqp=CAU" style="width: 250px; height: 250px; ">
+        </div>
+      </div>
+    </div >
+  </div>
+
+  <div class="tab-pane fade m-2" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+    <div class="card  " style="width: 25rem; margin: 10px auto;">
+      <div class="title d-flex justify-content-between">
+        <h5 class="card-title">My Crazy Dog</h5>
+        <span class="date">03/03/2024</span>
+      </div>
+    <img src="https://www.mercurynews.com/wp-content/uploads/2018/08/GettyImages-801073258.jpg?w=1024" >
+    <div class="card-body" style="padding: 5px;">
+      <div class="likes ">
+        <h5>1000 likes</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      
+    </div>
+   </div>
+   <div class="card " style="width: 25rem; margin: 10px auto;">
+    <div class="title d-flex justify-content-between">
+      <h5 class="card-title">Amazing Goal</h5>
+      <span class="date">03/03/2024</span>
+    </div>
+    <img src="https://www.mykhel.com/img/2012/11/16-zlatan-ibra.jpg">
+    <div class="card-body" style="padding: 5px;">
+      <h5>1000 likes</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+   </div>
+
+   <div class="card" style="width: 25rem; margin: 10px auto;">
+    <div class="title d-flex justify-content-between">
+      <h5 class="card-title">Nice Beach City</h5>
+      <span class="date">03/03/2024</span>
+    </div>
+    <img src="https://media.cntraveler.com/photos/5f0c6514a59b5ef54da61346/master/w_320%2Cc_limit/Tenerife-GettyImages-1138175909.jpg" >
+    <div class="card-body" style="padding: 5px;">
+      <h5>1000 likes</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+   </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
